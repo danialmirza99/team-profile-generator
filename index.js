@@ -1,7 +1,7 @@
-const Employee = require('./Employee');
-const Manager = require('./Manager');
-const Engineer = require('./Engineer');
-const Intern = require('./Intern');
+const Employee = require('./src/Employee');
+const Manager = require('./src/Manager');
+const Engineer = require('./src/Engineer');
+const Intern = require('./src/Intern');
 
 
 const inquirer = require('inquirer');
@@ -34,7 +34,6 @@ const generateHTML = (response) =>
         <h3>Id: ${response.engineerId}</h3>
         <h3>Email: ${response.engineerEmail}</h3>
         <h3>Github Profile: <a href="https://github.com/${response.engineerGithub}/">${response.engineerGithub}/</a></h3>
-        <h3 href="github.com/${response.engineerGithub}/">Github Profile: github.com//</h3>
     </div>
     <div class="Intern" style="width: 400px; height: 250px; position: relative; background-color: lightblue; padding: 10px;">
         <h2>Intern</h2>
@@ -228,7 +227,7 @@ inquirer
     // }
     // getEngineers();
         const readmeGen = generateHTML(response);
-        writeToFile('../index.html', readmeGen);
+        writeToFile('./index.html', readmeGen);
 });
 
 // function employeeChecker(){
