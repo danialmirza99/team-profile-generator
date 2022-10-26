@@ -18,3 +18,7 @@ class Employee{
         return Employee;
     }
 }
+
+//const Employee1 = new Employee("Danial", 123, "danialmirza99@gmail.com");
+
+module.exports = Employee;
