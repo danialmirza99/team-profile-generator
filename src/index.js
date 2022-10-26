@@ -108,7 +108,7 @@ inquirer
     */
         {
             type: 'input',
-            name: 'EngineerName',
+            name: 'engineerName',
             message: "Enter the name of the engineer. ",
         },
         {
